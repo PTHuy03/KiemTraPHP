@@ -11,7 +11,7 @@
 <body>
     <?php include __DIR__ . '/../layouts/header.php'; ?>
 
-    <div class="container mt-4">
+    <div class="container mt-4 mb-3">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card shadow-lg p-4">
@@ -58,7 +58,7 @@
                         </div>
 
                         <div class="d-flex justify-content-between">
-                            <a href="/sangT5/Test/NhanVien" class="btn btn-secondary">Quay Lại</a>
+                            <a href="/sangT5/Test/NhanVien/indexAdmin" class="btn btn-secondary">Quay Lại</a>
                             <button type="submit" class="btn btn-primary">Thêm Nhân Viên</button>
                         </div>
                     </form>

@@ -66,9 +66,9 @@ class NhanVien
 
     public function delete($id)
     {
-        $query = "DELETE FROM nhanvien WHERE Ma_NV = :id";
+        $query = "DELETE FROM nhanvien WHERE Ma_NV = :id LIMIT 1"; // Giới hạn chỉ xóa 1 dòng
         $stmt = $this->conn->prepare($query);
-        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+        $stmt->bindParam(':id', $id, PDO::PARAM_STR); // Định dạng là chuỗi
         return $stmt->execute();
     }
 }
